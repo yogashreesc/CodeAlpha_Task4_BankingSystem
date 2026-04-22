@@ -5,18 +5,6 @@ C++ banking system implementing account management, deposits, withdrawals and ba
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -130,7 +118,6 @@ void modifyAccount(int accNo, int option) {
         cout << "Account not found!\n";
 }
 
-// Menu
 int main() {
     int choice, accNo;
 
