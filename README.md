@@ -1,3 +1,12 @@
+ Banking System (C++)
+
+Description
+
+This project is a simple Banking System developed using C++. It allows users to create accounts, deposit money, withdraw money, and check account balance using file handling
+
+Code
+```cpp
+
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -23,6 +32,7 @@ public:
         cout << "\nBalance: " << balance << endl;
     }
 };
+
 void addAccount() {
     Account a;
     ofstream file("bank.dat", ios::binary | ios::app);
@@ -33,6 +43,7 @@ void addAccount() {
     file.close();
     cout << "Account Created!\n";
 }
+
 void showAccount(int num) {
     Account a;
     ifstream file("bank.dat", ios::binary);
@@ -46,6 +57,7 @@ void showAccount(int num) {
 
     cout << "Account not found!\n";
 }
+
 void updateAccount(int num, int type) {
     Account a;
     fstream file("bank.dat", ios::binary | ios::in | ios::out);
@@ -123,3 +135,15 @@ int main() {
 
     return 0;
 }
+
+```
+
+📷 Sample Output
+
+"Output" (output.jpg)
+
+---
+
+ Author
+
+Yogashree S C
